@@ -7,15 +7,51 @@
 
     <style>
 
+        .flex {
+            display: flex;
+        }
+
+        .flex-column {
+            flex-direction: column;
+        }
+
+        .flex-center {
+            justify-content: center;
+            align-items: center;
+        }
+
+        .flex-center-between {
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .flex-center-around {
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .flex-center-start {
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .flex-center-end {
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .underline{
+            text-decoration: underline;
+        }
+        
         body{
-            background-color: #161414f1;
+            background-color: #1d1d1d;
         }
         .input-group{
             font-size: 1.25rem;
             position: relative;
-            --primary: #2196f3;
+            --primary: #2272FF;
         }
-
 
         .input{
             all: unset;
@@ -31,7 +67,7 @@
             position: absolute;
             top: 1rem;
             left: 1rem;
-            color: #d4d4d4;
+            color: white;
             pointer-events: none;
             transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
         }
@@ -52,13 +88,19 @@
 
 </head>
 <body>
+
     <form action="" method="">
 
         <div class="input-group">
-
             <input  class="input" id="username" required type="text">
             <label class="label">Username:</label>
+        </div>
 
+        <br>
+
+        <div class="input-group">
+            <input  class="input" id="username" required type="text">
+            <label class="label">Password:</label>
         </div>
 
     </form>
